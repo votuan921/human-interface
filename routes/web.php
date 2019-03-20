@@ -17,3 +17,9 @@ Route::get('/', function () {
 
 Route::get('/doctor',"DoctorController@index");
 Route::get('/doctor/examination',"DoctorController@examination");
+
+//HI_06_{
+Route::get('/admin_hospital', "HospitalAdminController@index");
+Route::get('/admin_hospital/doctors', "HospitalAdminController@doctor_info");
+Route::get('/admin_hospital/staffs', "HospitalAdminController@staff_info");
+//}
